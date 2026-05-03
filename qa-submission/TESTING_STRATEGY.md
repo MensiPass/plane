@@ -11,11 +11,11 @@ Scope chosen
 •	User authentication / onboarding
 •	Workspace creation
 •	Project creation
-•	Issue creation and updates  
+•	Work item creation and updates  
 Why this area.
--	Authentication gates everything**. A broken auth flow means 0% of the product
+-	Authentication gates everything. A broken auth flow means 0% of the product
 is usable.
--	Issues are the core value unit of Plane. Every other feature (cycles, modules, analytics) depends on issues existing and being in valid states.
+-	Work item are the core value unit of Plane. Every other feature (cycles, modules, analytics) depends on issues existing and being in valid states.
 ________________________________________
 
 Testing pyramid approach
@@ -24,9 +24,9 @@ What belongs in integration vs E2E tests
 Integration:
 POST /issues/ creates DB record (pytest + Django)
 POST /issues/ without title → 400  (pytest)
-
 PATCH /issues/:id/ updates DB field (pytest)
-E2E
+
+E2E:
 Sign in → create workspace → create project (Playwright)
 Create work item → edit title → change state (Playwright)
 
@@ -34,9 +34,9 @@ Key risks
 Key Risks Being Tested
 
 1. Authentication — ensure authentication work as expected
-2. Data persistence — created issues survive a page reload
-3. State transitions — issue state changes persist correctly
-4. Validation — creating an issue without a title returns 400
+2. Data persistence — created work item survive a page reload
+3. State transitions — work item state changes persist correctly
+
 
 How to run tests locally
 Make sure frontend is running (only needed for E2E):
