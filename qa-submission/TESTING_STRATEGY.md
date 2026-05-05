@@ -53,3 +53,15 @@ Assumptions or setup requirements
 - User should be created and profile also
 - A workspace named `qa-test-workspace` is created during E2E test setup
 - Frontend base URL: `http://localhost:3000`
+
+Test result screens:
+
+<img width="1221" height="474" alt="test-complete" src="https://github.com/user-attachments/assets/8f125ec6-bbef-483d-a34d-28ad66152831" />
+
+
+<img width="1890" height="906" alt="c2" src="https://github.com/user-attachments/assets/4afe2d80-336b-427a-be25-794156970b75" />
+
+
+<img width="1605" height="990" alt="c1" src="https://github.com/user-attachments/assets/72c74898-9778-445b-bbf0-15e5c690bd61" />
+
+
